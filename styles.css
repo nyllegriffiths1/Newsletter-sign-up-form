@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-tomato: hsl(4, 100%, 67%);
+    --neutral-dark-slate-grey: hsl(235, 29%, 20%);
+    --neutral-charcoal-grey: hsl(235, 18%, 26%);
+    --neutral-grey: hsl(231, 7%, 60%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --font-size: 16px;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--neutral-dark-slate-grey);
+}
+
+.container {
+    width: 1000px;
+    height: 650px;
+    position: relative;
+    background: var(--neutral-white);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#newsletter {
+    width: 40%;
+    height: 100%;
+    margin: 50px 25px 25px 50px;
+    padding: 15px;
+}
+
+#main-heading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3.8em;
+}
+
+p {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+.main-image {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+
+li {
+    margin: 10px;
+    text-align: left;
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+ul img {
+    
+    padding-right: 15px;
+}
+
+.email {
+    margin: 15px;
+    padding: 15px;
+    text-align: left;
+}
+
+.email label {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.email input {
+    width: 90%;
+    height: 4em;
+    border: 2px solid var(--neutral-grey);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.email :placeholder-shown {
+    padding-left: 10px;
+}
+
+.email input:invalid {
+ border: 2px dashed red;       
+}
+
+
+button {
+    text-align: center;
+    width: 90%;
+    height: 4em;
+    margin-right: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: var(--neutral-charcoal-grey);
+    color: var(--neutral-white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
